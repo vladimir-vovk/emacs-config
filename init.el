@@ -35,6 +35,8 @@
 
 (message "Prelude is powering up... Be patient, Master %s!" (getenv "USER"))
 
+(setq prelude-flyspell nil)
+
 (defvar prelude-dir (file-name-directory load-file-name)
   "The root dir of the Emacs Prelude distribution.")
 (defvar prelude-core-dir (expand-file-name "core" prelude-dir)
@@ -109,3 +111,68 @@ by Prelude.")
  (run-at-time 5 nil 'prelude-tip-of-the-day))
 
 ;;; init.el ends here
+
+;; custom settings
+
+(autoload 'python-mode "python-mode" "Python Mode." t)
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+(add-to-list 'interpreter-mode-alist '("python" . python-mode))
+
+;; mercurial
+(add-to-list 'load-path "~/.emacs.d/")
+(require 'mercurial)
+
+;; pep8
+(require 'python-pep8)
+(global-set-key (kbd "C-c p 8") 'pep8)
+
+;; el-get
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
+
+(el-get 'sync)
+
+;; auto-complete
+(add-to-list 'load-path "~/.emacs.d/")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
+(ac-config-default)
+
+;; jedi
+(setq jedi:setup-keys t)
+(add-hook 'python-mode-hook 'jedi:setup)
+
+;; start server
+(load "server")
+(unless (server-running-p) (server-start))
+
+;; term
+(add-hook 'term-mode-hook (lambda()
+                            (yas-minor-mode -)))
+
+;; keys binding
+;; set insert debug string for python
+(global-set-key (kbd "C-c C-x C-d") "import pdb; pdb.set_trace()")
+;; set run rgrep
+(global-set-key (kbd "C-c C-x C-r") 'rgrep)
+;; open file in browser
+(global-set-key (kbd "C-c C-x C-b") 'browse-url-of-file)
+
+;; fill column indicator
+(define-globalized-minor-mode
+  global-fci-mode fci-mode (lambda () (fci-mode 1)))
+(global-fci-mode t)
+
+;; python code check with flake8
+;; sudo pip install flake8
+;; sudo pip install pylint
+(autoload 'python-pylint "python-pylint")
+(autoload 'pylint "python-pylint")
+(require 'python-flake8)
+(global-set-key (kbd "C-c C-e") 'flake8)

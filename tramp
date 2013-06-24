@@ -1,0 +1,41 @@
+;; -*- emacs-lisp -*- <13/06/19 12:42:29 /home/vvovk/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+((["ssh" nil "5.9.38.38" nil nil]
+  nil)
+ (["ssh" "vvovk" "5.9.38.38" nil nil]
+  nil)
+ (["ssh" "vvovk" "5.9.38.38#8022" nil nil]
+  ("uname" "Linux 3.5.0-18-generic")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("busybox" nil)
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("readlink" "\\readlink")
+  ("stat" "\\stat")
+  ("file-exists" "test -e")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 1002)
+  ("~" "/home/vvovk")
+  ("uid-integer" 1002)
+  ("ls" "/bin/ls --color=never"))
+ (["ssh" nil "192.168.1.20" nil nil]
+  ("uname" "Linux 3.2.0-33-generic")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("busybox" nil)
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("readlink" "\\readlink")
+  ("stat" "\\stat")
+  ("file-exists" "test -e")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 1002)))
