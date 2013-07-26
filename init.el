@@ -176,3 +176,7 @@ by Prelude.")
 (autoload 'pylint "python-pylint")
 (require 'python-flake8)
 (global-set-key (kbd "C-c C-e") 'flake8)
+
+;; move between panes with M-<arrow key>
+;; work as S-<arrow key>
+(windmove-default-keybindings 'meta)
