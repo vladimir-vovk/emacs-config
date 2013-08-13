@@ -1,12 +1,8 @@
-;; -*- emacs-lisp -*- <13/06/19 12:42:29 /home/vvovk/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <13/07/04 13:42:19 /home/vvovk/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
-((["ssh" nil "5.9.38.38" nil nil]
-  nil)
- (["ssh" "vvovk" "5.9.38.38" nil nil]
-  nil)
- (["ssh" "vvovk" "5.9.38.38#8022" nil nil]
+((["ssh" "vvovk" "5.9.38.38#8022" nil nil]
   ("uname" "Linux 3.5.0-18-generic")
   ("test" "test")
   ("remote-path"
@@ -38,4 +34,5 @@
   ("stat" "\\stat")
   ("file-exists" "test -e")
   ("id" "/usr/bin/id")
-  ("gid-integer" 1002)))
+  ("gid-integer" 1002)
+  ("~" "/home/vvovk")))
