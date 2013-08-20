@@ -154,8 +154,8 @@ by Prelude.")
 (unless (server-running-p) (server-start))
 
 ;; term
-(add-hook 'term-mode-hook (lambda()
-                            (yas-minor-mode -)))
+;;(add-hook 'term-mode-hook (lambda()
+                            ;;(yas-minor-mode -)))
 
 ;; keys binding
 ;; set insert debug string for python
