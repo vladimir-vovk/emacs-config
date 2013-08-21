@@ -181,3 +181,13 @@ by Prelude.")
 ;; move between panes with M-<arrow key>
 ;; work as S-<arrow key>
 (windmove-default-keybindings 'meta)
+
+;; ---------------------------
+;; -- JS Mode configuration --
+;; ---------------------------
+(load "js-config.el")
+(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
+(require 'sws-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
