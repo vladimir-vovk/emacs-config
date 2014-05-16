@@ -164,6 +164,8 @@ by Prelude.")
 (global-set-key (kbd "C-c C-x C-r") 'rgrep)
 ;; open file in browser
 (global-set-key (kbd "C-c C-x C-b") 'browse-url-of-file)
+;; goto header/source file
+(global-set-key (kbd "C-c o") 'ff-find-other-file)
 
 ;; fill column indicator
 (define-globalized-minor-mode
@@ -191,3 +193,22 @@ by Prelude.")
 (require 'jade-mode)
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+
+;; dired
+(setq dired-dwim-target t)
+
+;; org-reveal
+(require 'ox-reveal)
+(setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/2.5.0/")
+
+;; toggle off scroll bar
+(toggle-scroll-bar 0)
+
+;; theme
+(load-theme 'railscasts t nil)
+
+;; global font lock on
+(global-font-lock-mode t)
+
+(set-default-font "Monaco 12")
+

@@ -35,7 +35,7 @@
 
 (defvar prelude-mode-map
   (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-c o") 'prelude-open-with)
+    ;; (define-key map (kbd "C-c o") 'prelude-open-with)
     (define-key map (kbd "C-c g") 'prelude-google)
     ;; mimic popular IDEs binding, note that it doesn't work in a terminal session
     (define-key map [(shift return)] 'prelude-smart-open-line)
