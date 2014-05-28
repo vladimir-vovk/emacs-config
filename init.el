@@ -168,9 +168,9 @@ by Prelude.")
 (global-set-key (kbd "C-c o") 'ff-find-other-file)
 
 ;; fill column indicator
-(define-globalized-minor-mode
-  global-fci-mode fci-mode (lambda () (fci-mode 1)))
-(global-fci-mode t)
+;; (define-globalized-minor-mode
+;;   global-fci-mode fci-mode (lambda () (fci-mode 1)))
+;; (global-fci-mode t)
 
 ;; python code check with flake8
 ;; sudo pip install flake8
@@ -188,7 +188,8 @@ by Prelude.")
 ;; -- JS Mode configuration --
 ;; ---------------------------
 (load "js-config.el")
-(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
+(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode dfdfdfdf
+
 (require 'sws-mode)
 (require 'jade-mode)
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
@@ -210,5 +211,19 @@ by Prelude.")
 ;; global font lock on
 (global-font-lock-mode t)
 
+;; defaul font
 (set-default-font "Monaco 12")
 
+;; column marker
+(add-hook 'html-mode-hook (lambda () (interactive) (column-marker-1 80)))
+(add-hook 'python-mode-hook (lambda () (interactive) (column-marker-1 80)))
+(add-hook 'javascript-mode-hook (lambda () (interactive) (column-marker-1 80)))
+(add-hook 'web-mode-hook (lambda () (interactive) (column-marker-1 80)))
+
+;; this slows opening files
+(remove-hook 'find-file-hooks 'vc-find-file-hook)
+(remove-hook 'find-file-hooks 'hg-find-file-hook)
+
+;; fix for slow emacs when saving files
+(setq vc-handled-backends nil)
+(remove-hook 'after-save-hook 'hg-after-save-hook)

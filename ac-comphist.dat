@@ -1,70 +1,88 @@
-((("highlight" .
-   [1 0 0 0 0 0 0 0 0])
-  ("link" .
+((("after-save-hook" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  (":foreground" .
+   [0 0 0 0 0 0 0 1 0 0 0])
+  ("javascript-mode" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("load" .
    [1 0 0 0])
-  ("set-face-foreground" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("sp-pair-overlay-face" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("10px" .
-   [1 0 0 0])
-  ("20px" .
-   [1 0 0 0])
-  ("nil" .
-   [1 0 0])
-  ("railscasts" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("load-theme" .
-   [0 0 0 0 0 0 1 0 0 0])
-  ("kTankFire" .
-   [0 0 0 0 0 0 1 0 0])
-  ("setFireSound" .
-   [0 0 0 1 0 0 0 0 0 0 0 0])
-  ("kTankMove" .
-   [0 0 0 0 0 0 0 1 0])
-  ("setMoveSound" .
-   [0 0 0 0 0 1 0 0 0 0 0 0])
-  ("kTankIdle" .
-   [0 0 0 0 0 1 0 0 0])
-  ("Sounds" .
-   [0 0 0 2 0 1])
-  ("setIdleSound" .
-   [0 0 0 0 1 0 0 0 0 0 0 0])
-  ("else" .
-   [2 0 0 0])
-  ("global-set-key" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("ff-find-other-file" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("global-unset-key" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("kbd" .
-   [1 0 0])
-  ("return" .
-   [1 0 0 0 0 0])
-  ("object" .
-   [1 0 0 0 0 0])
-  ("throw" .
-   [1 0 0 0 0])
-  ("obj" .
-   [4 0 0])
-  ("setAngle" .
-   [1 0 0 0 0 0 0 0])
-  ("45" .
-   [1 0])
-  ("game_object" .
-   [0 0 0 0 0 1 0 2 0 0 0])
-  ("m_ammunition" .
-   [0 0 0 1 0 0 0 0 0 0 0 0])
-  ("18" .
+  ("show-paren-match" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("set-face-background" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("toggle-scroll-bar" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("of" .
    [1 0])
   ("to" .
    [1 0])
-  ("of" .
+  ("18" .
    [1 0])
-  ("toggle-scroll-bar" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("set-face-background" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("show-paren-match" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])))
+  ("m_ammunition" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("game_object" .
+   [0 0 0 0 0 1 0 2 0 0 0])
+  ("45" .
+   [1 0])
+  ("setAngle" .
+   [1 0 0 0 0 0 0 0])
+  ("obj" .
+   [4 0 0])
+  ("throw" .
+   [1 0 0 0 0])
+  ("object" .
+   [1 0 0 0 0 0])
+  ("return" .
+   [1 0 0 0 0 0])
+  ("kbd" .
+   [1 0 0])
+  ("global-unset-key" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("ff-find-other-file" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("global-set-key" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("else" .
+   [2 0 0 0])
+  ("setIdleSound" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("Sounds" .
+   [0 0 0 2 0 1])
+  ("kTankIdle" .
+   [0 0 0 0 0 1 0 0 0])
+  ("setMoveSound" .
+   [0 0 0 0 0 1 0 0 0 0 0 0])
+  ("kTankMove" .
+   [0 0 0 0 0 0 0 1 0])
+  ("setFireSound" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("kTankFire" .
+   [0 0 0 0 0 0 1 0 0])
+  ("load-theme" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("railscasts" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("nil" .
+   [1 0 0])
+  ("20px" .
+   [1 0 0 0])
+  ("10px" .
+   [1 0 0 0])
+  ("sp-pair-overlay-face" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("set-face-foreground" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("link" .
+   [1 0 0 0])
+  ("highlight" .
+   [1 0 0 0 0 0 0 0 0])
+  ("require" .
+   [1 0 0 0 0 0 0])
+  ("column-marker" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("column-marker-1" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("column-marker-3" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("hg-find-file-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])))
